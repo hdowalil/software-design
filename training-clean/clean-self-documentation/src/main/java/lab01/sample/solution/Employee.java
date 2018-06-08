@@ -6,7 +6,7 @@ public class Employee {
 	private static int BONUS_FACTOR = 2;
 	
 	private static int MINIMUM_PATTERN_KNOWHOW_PERCENTAGE_OF_SENIOR = 50;
-	private static int MINIMUM_YEARS_EXPERIENCE_OF_SENIOR = 3;
+	private static int MINIMUM_YEARS_EXPERIENCE_OF_SENIOR = 2;
 	
 	
 	private long salary;
