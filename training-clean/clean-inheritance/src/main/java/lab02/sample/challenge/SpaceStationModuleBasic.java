@@ -10,16 +10,12 @@ public class SpaceStationModuleBasic implements SpaceStationModule {
 	
 	private int temperatureInCelsius = 20;
 
-	/* (non-Javadoc)
-	 * @see lab02.sample.challenge.SpaceStationModule#getTemperatureInCelsius()
-	 */
+	@Override
 	public int getTemperatureInCelsius() {
 		return temperatureInCelsius;
 	}
 
-	/* (non-Javadoc)
-	 * @see lab02.sample.challenge.SpaceStationModule#receiveSunshine()
-	 */
+	@Override
 	public void receiveSunshine() {
 		
 		if (this.temperatureInCelsius > TEMPERATURE_TOO_HIGH) {
@@ -29,16 +25,12 @@ public class SpaceStationModuleBasic implements SpaceStationModule {
 		this.temperatureInCelsius += 1;
 	}
 	
-	/* (non-Javadoc)
-	 * @see lab02.sample.challenge.SpaceStationModule#coolDown(lab02.sample.challenge.ChargableResource)
-	 */
+	@Override
 	public void coolDown(ChargableResource battery) {
 		this.temperatureInCelsius -= 5;
 	}
 	
-	/* (non-Javadoc)
-	 * @see lab02.sample.challenge.SpaceStationModule#restAstronauts(lab02.sample.challenge.Astronaut)
-	 */
+	@Override
 	public void restAstronauts (Astronaut... astronauts) {
 		
 		for (Astronaut astronaut : astronauts) {

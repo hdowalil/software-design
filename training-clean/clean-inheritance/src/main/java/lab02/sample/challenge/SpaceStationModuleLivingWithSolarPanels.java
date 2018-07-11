@@ -24,6 +24,7 @@ public class SpaceStationModuleLivingWithSolarPanels extends SpaceStationModuleB
 		this.batteryToLoad = batteryToLoad;
 	}
 
+	@Override
 	public void restAstronauts(Astronaut... astronauts) {
 		
 		for (int i=0; i<astronauts.length; i++) {

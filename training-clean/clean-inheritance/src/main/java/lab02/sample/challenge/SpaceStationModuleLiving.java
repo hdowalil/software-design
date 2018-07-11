@@ -15,6 +15,7 @@ public class SpaceStationModuleLiving extends SpaceStationModuleBasic {
 		this.bedQuality = bedQuality;
 	}
 
+	@Override
 	public void restAstronauts(Astronaut... astronauts) {
 		
 		for (int i=0; i<astronauts.length; i++) {
