@@ -13,7 +13,7 @@ import lab01.sample.common.Message;
 
 public class RabbitMQCommunicatorSLA {
 
-	public Message warpTextInMessage(String input) {
+	public Message wrapTextInMessage(String input) {
 
 		Message message = new Message();
 		message.setSomeText("The user said: " + input);
