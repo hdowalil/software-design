@@ -3,7 +3,7 @@ package lab02.sample.common;
 public class Astronaut {
 	
 	private String name;
-	private long fatigueInPercent;
+	private long fatigueInPercent=0;
 
 	public Astronaut(String name) {
 		super();
