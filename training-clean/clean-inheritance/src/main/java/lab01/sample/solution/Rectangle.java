@@ -2,8 +2,8 @@ package lab01.sample.solution;
 
 public final class Rectangle extends FourSidedFigure {
 	
-	int width;
-	int height;
+	private int width;
+	private int height;
 	
 	public Rectangle(int width, int height) {
 		super();

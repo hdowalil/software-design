@@ -2,8 +2,8 @@ package lab01.sample.challenge;
 
 public class Rectangle {
 	
-	int width;
-	int height;
+	private int width;
+	private int height;
 	
 	public int area() {
 		return width*height;
