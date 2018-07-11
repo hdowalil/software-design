@@ -47,7 +47,7 @@ public class PolicyCreator {
 					newRisk.setPremium(newRisk.getPremium()*2);
 				}
 				
-			} else if (VehicleType.CAR.equals(vehicle.getType())) {
+			} else if (VehicleType.TRUCK.equals(vehicle.getType())) {
 
 				// Flatrate
 				newRisk.setPremium(newRisk.getPremium()*10);
