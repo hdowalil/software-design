@@ -5,7 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.function.Consumer;
 
 /**
- * TV with only 1 HDMI input connections
+ * TV with only 1 HDMI input connection
  */
 public class TV {
 	
