@@ -1,31 +1,19 @@
 package lab01.sample.challenge;
 
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
-import java.util.function.Consumer;
-
 public class PersonalComputer implements DVIConnection {
 
-	private Consumer<byte[]> monitor;
+	private byte[] picture2Stream = new byte[] {};
+	
+	public void vlc(AudioAndVideo illegallyDownloadedMovie) {
+		
+		picture2Stream = illegallyDownloadedMovie.getVideo();
+		
+		System.out.println("AUDIO on PC Speakers: "+ AudioAndVideo.convertByteArrayToString(illegallyDownloadedMovie.getAudio()));
+	}
 	
 	@Override
-	public void provide(Consumer<byte[]> monitor) {
-		this.monitor = monitor;	
+	public byte[] transmitVideo() {
+		return picture2Stream;
 	}
-	
-	public void vlc(String illegallyDownloadedMovie) {
-		stream(illegallyDownloadedMovie);
-	}
-	
-	public void stream(String movie) {
-		
-		try {
-			monitor.accept(movie.getBytes(StandardCharsets.UTF_8.name()));
-		} catch (UnsupportedEncodingException e) {
-			throw new RuntimeException(e);
-		}
-	}
-	
-	
 
 }

@@ -4,12 +4,12 @@ import lab01.sample.challenge.NetworkAttachedStorage;
 import lab01.sample.challenge.PersonalComputer;
 import lab01.sample.challenge.TV;
 
-public class ViewerTrekkie {
+public class ViewStarTrekOnTV {
 
 	public static void main(String[] args) {
 		
 		PersonalComputer pc = new PersonalComputer();
-		TV tv = new TV(System.out::println);
+		TV tv = new TV();
 		tv.power(true);
 		
 		DVIProviderHDMIConsumerAdapter adapter = new DVIProviderHDMIConsumerAdapter(pc);
