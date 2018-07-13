@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 public class PersonalComputer implements DVIConnection {
 
-	Consumer<byte[]> monitor;
+	private Consumer<byte[]> monitor;
 	
 	@Override
 	public void provide(Consumer<byte[]> monitor) {
