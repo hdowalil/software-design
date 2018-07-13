@@ -11,11 +11,11 @@ public class TV {
 	
 	private HDMIConnection connectedDevice = null;
 	private boolean power = false;
-	private Consumer<String> out;
+	private Consumer<String> screen;
 	
-	public TV(Consumer<String> out) {
+	public TV(Consumer<String> screen) {
 		super();
-		this.out = out;
+		this.screen = screen;
 	}
 
 	public void power(boolean on) {
@@ -31,9 +31,10 @@ public class TV {
 		if (this.power && connectedDevice != null) {
 			
 			try {
+				
 				byte[] receivedBinary = connectedDevice.streamAudioAndVideo();
 				String outputVideo = new String(receivedBinary,StandardCharsets.UTF_8.name());
-				out.accept(outputVideo);
+				screen.accept(outputVideo);
 				
 			} catch (UnsupportedEncodingException e) {
 				throw new RuntimeException(e);

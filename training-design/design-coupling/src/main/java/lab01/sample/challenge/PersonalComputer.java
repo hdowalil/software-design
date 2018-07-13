@@ -19,7 +19,6 @@ public class PersonalComputer implements DVIConnection {
 	
 	public void stream(String movie) {
 		
-		// as a dummy implementation we watch star-trek
 		try {
 			monitor.accept(movie.getBytes(StandardCharsets.UTF_8.name()));
 		} catch (UnsupportedEncodingException e) {
