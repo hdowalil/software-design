@@ -7,14 +7,14 @@ import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 
 @Immutable
-public class AudioAndVideo {
+public class VideoAndAudio {
 	
 	public static byte[] SILENCE = new byte[] {};
 
 	private byte[] video;
 	private byte[] audio;
 	
-	public AudioAndVideo(byte[] video, byte[] audio) {
+	public VideoAndAudio(byte[] video, byte[] audio) {
 		super();
 		this.video = video;
 		this.audio = audio;

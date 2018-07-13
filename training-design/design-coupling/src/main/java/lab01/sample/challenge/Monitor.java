@@ -10,7 +10,7 @@ public class Monitor {
 	
 	public void display () {
 		
-		String video = AudioAndVideo.convertByteArrayToString(connectedDevice.transmitVideo());
+		String video = VideoAndAudio.convertByteArrayToString(connectedDevice.transmitVideo());
 		System.out.println("VIDEO on Montor: " + video);
 	}
 }

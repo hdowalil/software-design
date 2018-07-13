@@ -14,12 +14,12 @@ public class NetworkAttachedStorage {
 			+" Michael Knight, a young loner on a crusade to champion the cause of the innocent, the helpless,"
 			+" the powerless, in a world of criminals who operate above the law.";
 
-	public final static AudioAndVideo STAR_TREK = 
-			new AudioAndVideo(STAR_TREK_VIDEO.getBytes(StandardCharsets.UTF_8), 
+	public final static VideoAndAudio STAR_TREK = 
+			new VideoAndAudio(STAR_TREK_VIDEO.getBytes(StandardCharsets.UTF_8), 
 					STAR_TREK_AUDIO.getBytes(StandardCharsets.UTF_8));
 	
-	public final static AudioAndVideo KNIGHT_RIDER = 
-			new AudioAndVideo(KNIGHT_RIDER_VIDEO.getBytes(StandardCharsets.UTF_8), 
+	public final static VideoAndAudio KNIGHT_RIDER = 
+			new VideoAndAudio(KNIGHT_RIDER_VIDEO.getBytes(StandardCharsets.UTF_8), 
 					KNIGHT_RIDER_AUDIO.getBytes(StandardCharsets.UTF_8));
 	
 }

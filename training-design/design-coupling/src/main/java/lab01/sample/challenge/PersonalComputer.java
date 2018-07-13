@@ -4,11 +4,11 @@ public class PersonalComputer implements DVIConnection {
 
 	private byte[] picture2Stream = new byte[] {};
 	
-	public void vlc(AudioAndVideo illegallyDownloadedMovie) {
+	public void vlc(VideoAndAudio illegallyDownloadedMovie) {
 		
 		picture2Stream = illegallyDownloadedMovie.getVideo();
 		
-		System.out.println("AUDIO on PC Speakers: "+ AudioAndVideo.convertByteArrayToString(illegallyDownloadedMovie.getAudio()));
+		System.out.println("AUDIO on PC Speakers: "+ VideoAndAudio.convertByteArrayToString(illegallyDownloadedMovie.getAudio()));
 	}
 	
 	@Override

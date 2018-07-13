@@ -1,6 +1,6 @@
 package lab01.sample.solution;
 
-import lab01.sample.challenge.AudioAndVideo;
+import lab01.sample.challenge.VideoAndAudio;
 import lab01.sample.challenge.DVIConnection;
 import lab01.sample.challenge.HDMIConnection;
 
@@ -14,9 +14,9 @@ public class DVIProviderHDMIConsumerAdapter implements HDMIConnection {
 	}
 
 	@Override
-	public AudioAndVideo transmitVideoAndAudio() {
+	public VideoAndAudio transmitVideoAndAudio() {
 		byte[] video = delegate.transmitVideo();
-		AudioAndVideo result = new AudioAndVideo(video, AudioAndVideo.SILENCE);
+		VideoAndAudio result = new VideoAndAudio(video, VideoAndAudio.SILENCE);
 		return result;
 	}
 

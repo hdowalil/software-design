@@ -20,9 +20,9 @@ public class TV {
 
 		if (this.power && connectedDevice != null) {
 			
-			AudioAndVideo receivedBinary = connectedDevice.transmitVideoAndAudio();
-			System.out.println("VIDEO on TV: " + AudioAndVideo.convertByteArrayToString(receivedBinary.getVideo()));
-			System.out.println("AUDIO on TV: " + AudioAndVideo.convertByteArrayToString(receivedBinary.getAudio()));
+			VideoAndAudio receivedBinary = connectedDevice.transmitVideoAndAudio();
+			System.out.println("VIDEO on TV: " + VideoAndAudio.convertByteArrayToString(receivedBinary.getVideo()));
+			System.out.println("AUDIO on TV: " + VideoAndAudio.convertByteArrayToString(receivedBinary.getAudio()));
 		}
 	}
 	
