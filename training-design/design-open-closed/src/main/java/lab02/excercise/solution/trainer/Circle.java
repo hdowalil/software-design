@@ -21,6 +21,4 @@ public class Circle implements Shape {
         out.println("\\___/");
 	}
 	
-	
-
 }
