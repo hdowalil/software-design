@@ -17,9 +17,6 @@ public final class SpaceStation extends Debris {
 	private boolean collision = false;
 	private Alert alert = null;
 	
-	/*
-	 * should only be called by builder, and builder is public
-	 */
 	public SpaceStation(Space space, long positionX, long positionY, long positionZ) {
 		super(positionX, positionY, positionZ,STATION_SIZE);
 		this.space=space;
