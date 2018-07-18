@@ -20,7 +20,7 @@ public class TV {
 
 		if (this.power && connectedDevice != null) {
 			
-			return connectedDevice.streamAudioAndVideo();
+			return connectedDevice.streamVideoAndAudio();
 			
 		} else {
 			

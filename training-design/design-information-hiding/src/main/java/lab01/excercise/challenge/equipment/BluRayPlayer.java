@@ -17,7 +17,7 @@ public class BluRayPlayer implements HDMIConnection {
 	}
 
 	@Override
-	public byte[] streamAudioAndVideo() {
+	public byte[] streamVideoAndAudio() {
 		if (power && disc != null) {
 			try {
 				return String.format(disc).getBytes(StandardCharsets.UTF_8.name());

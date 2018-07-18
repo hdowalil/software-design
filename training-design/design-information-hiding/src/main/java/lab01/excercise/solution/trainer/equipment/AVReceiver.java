@@ -24,12 +24,12 @@ class AVReceiver implements HDMIConnection {
 	}
 	
 	@Override
-	public byte[] streamAudioAndVideo() {
+	public byte[] streamVideoAndAudio() {
 		
 		HDMIConnection device = this.hdmiConnections[this.currentSource];
 		if (this.power && device != null) {
 			
-			byte[] result = device.streamAudioAndVideo();
+			byte[] result = device.streamVideoAndAudio();
 			
 			if (connectedSpeakers != null) {
 				connectedSpeakers.makeSomeNoise(result);

@@ -45,7 +45,7 @@ class SatelliteReceiver implements HDMIConnection {
 	}
 	
 	@Override
-	public byte[] streamAudioAndVideo() {
+	public byte[] streamVideoAndAudio() {
 		if (power) {
 			return channels.get(channel-1);
 		} else {
