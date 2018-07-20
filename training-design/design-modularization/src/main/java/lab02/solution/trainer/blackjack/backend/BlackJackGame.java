@@ -95,8 +95,6 @@ public class BlackJackGame {
 	
 	/**
 	 * gimme one more card!
-	 * 
-	 * @return will return true if it is possible for the player to play one more round!
 	 */
 	public void hit() {
 		
