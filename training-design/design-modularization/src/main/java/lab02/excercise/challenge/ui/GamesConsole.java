@@ -155,7 +155,7 @@ public class GamesConsole {
 		
 		while (!"0".equals(entry) && !game.isGameOver()) {
 			
-			out.println("Guess my number that is somewhere from 1 to 99. You have %d tries left!");
+			out.println(String.format("Guess my number that is somewhere from 1 to 99. You have %d tries left!",game.getRoundsLeft()));
 			out.print("Enter your next guess, or 0 to quit:");
 			
 			do {

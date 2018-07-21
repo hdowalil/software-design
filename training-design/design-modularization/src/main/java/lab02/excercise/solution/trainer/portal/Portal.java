@@ -1,4 +1,4 @@
-package lab02.solution.trainer.portal;
+package lab02.excercise.solution.trainer.portal;
 
 public interface Portal {
 

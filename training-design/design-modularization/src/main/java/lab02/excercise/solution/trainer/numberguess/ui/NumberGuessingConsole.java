@@ -1,12 +1,12 @@
-package lab02.solution.trainer.numberguess.ui;
+package lab02.excercise.solution.trainer.numberguess.ui;
 
 import java.io.PrintStream;
 import java.util.Scanner;
 
-import lab02.solution.trainer.numberguess.backend.GuessResult;
-import lab02.solution.trainer.numberguess.backend.NumberGuessingGame;
-import lab02.solution.trainer.portal.GameConsole;
-import lab02.solution.trainer.portal.Portal;
+import lab02.excercise.solution.trainer.numberguess.backend.GuessResult;
+import lab02.excercise.solution.trainer.numberguess.backend.NumberGuessingGame;
+import lab02.excercise.solution.trainer.portal.GameConsole;
+import lab02.excercise.solution.trainer.portal.Portal;
 
 public class NumberGuessingConsole implements GameConsole {
 
@@ -24,7 +24,7 @@ public class NumberGuessingConsole implements GameConsole {
 		
 		while (!"0".equals(entry) && !game.isGameOver()) {
 			
-			out.println("Guess my number that is somewhere from 1 to 99. You have %d tries left!");
+			out.println(String.format("Guess my number that is somewhere from 1 to 99. You have %d tries left!",game.getRoundsLeft()));
 			out.print("Enter your next guess, or 0 to quit:");
 			
 			do {

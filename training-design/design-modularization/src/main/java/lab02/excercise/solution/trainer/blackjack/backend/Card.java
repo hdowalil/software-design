@@ -1,4 +1,4 @@
-package lab02.solution.trainer.blackjack.backend;
+package lab02.excercise.solution.trainer.blackjack.backend;
 
 public enum Card {
 	

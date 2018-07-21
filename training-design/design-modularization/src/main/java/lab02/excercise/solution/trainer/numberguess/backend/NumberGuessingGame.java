@@ -1,4 +1,4 @@
-package lab02.solution.trainer.numberguess.backend;
+package lab02.excercise.solution.trainer.numberguess.backend;
 
 import java.util.Random;
 

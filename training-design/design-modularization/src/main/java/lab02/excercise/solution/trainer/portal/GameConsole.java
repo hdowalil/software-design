@@ -1,4 +1,4 @@
-package lab02.solution.trainer.portal;
+package lab02.excercise.solution.trainer.portal;
 
 import java.io.PrintStream;
 import java.util.Scanner;

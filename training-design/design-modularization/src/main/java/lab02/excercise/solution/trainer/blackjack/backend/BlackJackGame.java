@@ -1,4 +1,4 @@
-package lab02.solution.trainer.blackjack.backend;
+package lab02.excercise.solution.trainer.blackjack.backend;
 
 import java.util.ArrayList;
 import java.util.List;
