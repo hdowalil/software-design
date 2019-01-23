@@ -3,7 +3,7 @@ package lab02.excercise.solution.trainer.blackjack.ui;
 import java.io.PrintStream;
 import java.util.Scanner;
 
-import lab02.excercise.challenge.blackjack.BlackJackGame;
+import lab02.excercise.solution.trainer.blackjack.backend.BlackJackGame;
 import lab02.excercise.solution.trainer.portal.GameConsole;
 import lab02.excercise.solution.trainer.portal.Portal;
 
