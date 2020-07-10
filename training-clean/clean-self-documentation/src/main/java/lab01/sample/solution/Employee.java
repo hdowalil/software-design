@@ -23,7 +23,7 @@ public class Employee {
 		this.yearsExperience = yearsExperience;
 		this.externalEmployee = externalEmployee;
 		
-		if (shouldBecomeABonus()) {
+		if (shouldGetABonus()) {
 			salary = BASIC_SALARY * BONUS_FACTOR;
 		} else {
 			salary = BASIC_SALARY;
@@ -31,7 +31,7 @@ public class Employee {
 		
 	}
 	
-	private boolean shouldBecomeABonus() {
+	private boolean shouldGetABonus() {
 		return ( (isSeniorDeveloper() && !externalEmployee) || relatedToManager);
 	}
 
